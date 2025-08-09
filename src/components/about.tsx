@@ -2,7 +2,7 @@ import Selfie from "../assets/selfie.jpg"
 
 export default function About() {
     return (
-        <div className="flex justify-evenly items-center mt-10">
+        <div className="flex justify-evenly items-center pt-10">
             <div className="text-left text-white w-1/2 text-lg" id="about">
                 <p>- Hi my name is Ricardo Manuel Morales Gonzalez, and I am a software developer.</p>
                 <p>- I graduated from The Johns Hopkins Univeristy in May 2024 with a degree in Computer Science and a minor in Entrepreneurship and Management</p>
