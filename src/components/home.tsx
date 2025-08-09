@@ -1,0 +1,12 @@
+import Navbar from './navbar.tsx';
+import About from './about.tsx';
+
+export default function Home() {
+    return (
+    <div className="min-h-screen bg-gray-600 px-8 font-[Rationale]">
+        <Navbar />
+        <About />
+    </div>
+    )
+    
+}
