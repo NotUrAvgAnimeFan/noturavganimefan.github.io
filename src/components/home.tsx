@@ -1,4 +1,5 @@
 import { TypeAnimation} from 'react-type-animation';
+import Resume from './resume.tsx';
 
 const ExampleComponent = () => {
   return (
@@ -60,7 +61,9 @@ export default function Home() {
                 </ul>
             </div>
             </div>
-            
+            <h2 className="text-base sm:text-lg pt-4 font-bold">Resume</h2>
+            <Resume />
+            <h2 className="text-base sm:text-lg pt-4 font-bold">About Me</h2>
         </div>        
     </div>
     )
