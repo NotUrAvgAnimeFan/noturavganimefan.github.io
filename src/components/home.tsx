@@ -63,6 +63,11 @@ export default function Home() {
                             AI Manga Cover
                         </a>: Create your own manga cover using AI. Simply provide a title and a description and let AI do the rest!
                     </li>
+                    <li>
+                        <a href="https://song-info-one.vercel.app/" target='_blank' className="text-blue-400 hover:underline">
+                            Spotify Song Info
+                        </a>: Get some of the metadata correspondig to your favorite Spotify songs. This app uses the Spotify API to fetch song information.
+                    </li>
                 </ul>
             </div>
             </div>
