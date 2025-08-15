@@ -44,6 +44,11 @@ export default function Home() {
                 <div className='text-xs sm:text-sm text-left sm:max-w-3xl'>
                 <ul className="list-disc list-inside pt-2">
                     <li>
+                        <a href="https://etch-a-sketch-nu-five.vercel.app/" target='_blank' className="text-blue-400 hover:underline">
+                            Etch-A-Sketch
+                        </a>: Draw what your heart desires on this near infinite canvas.
+                    </li>
+                    <li>
                         <a href="https://noturavganimefan.github.io/sleepy-times/" target='_blank' className="text-blue-400 hover:underline">
                             Sleepy Times
                         </a>: Want to know when to fall asleep to wake up feeling amazing? Use this calculator to know when you should fall asleep based on sleep cycles.
