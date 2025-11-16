@@ -27,6 +27,35 @@ const ExampleComponent = () => {
 
 
 export default function Home() {
+    const projects = [
+        {
+            link: "https://photography.ricardomoralesgonzalez.com/",
+            title: "Photography Portfolio",
+            description: "Full-stack photography portfolio built with Next.js, React, Tailwind CSS, NestJS, PostgreSQL, Google Cloud Storage, and Azure App Service, all managed through GitHub Actions for seamless CI/CD."
+        },
+        {
+            link: "https://song-info-one.vercel.app/",
+            title: "Spotify Song Info",
+            description: "Get some of the metadata correspondig to your favorite Spotify songs. This app uses the Spotify API to fetch song information."
+        },
+        {
+            link: "https://noturavganimefan.github.io/manga-creation/",
+            title: "AI Manga Cover",
+            description: "Create your own manga cover using AI. Simply provide a title and a description and let AI do the rest!"
+        },
+        {
+            link: "https://noturavganimefan.github.io/sticky-notes/",
+            title: "Sticky Notes",
+            description: "A simple and intuitive sticky notes application built with React."
+        },
+        {
+            link: "https://noturavganimefan.github.io/sleepy-times/",
+            title: "Etch-A-Sketch",
+            description: "Draw what your heart desires on this near infinite canvas."
+        }
+    ]
+
+
     return (
     <div className="min-h-screen bg-gray-900 px-8 font-mono flex flex-col items-center">
         <div className="text-white text-center sm:max-w-3xl">
@@ -43,41 +72,24 @@ export default function Home() {
             <div className='flex flex-col items-center'>
                 <div className='text-xs sm:text-sm text-left sm:max-w-3xl'>
                 <ul className="list-disc list-inside pt-2">
-                    <li>
-                        <a href="https://song-info-one.vercel.app/" target='_blank' className="text-blue-400 hover:underline">
-                            Spotify Song Info
-                        </a>: Get some of the metadata correspondig to your favorite Spotify songs. This app uses the Spotify API to fetch song information.
-                    </li>
-                    <li>
-                        <a href="https://noturavganimefan.github.io/manga-creation/" target='_blank' className="text-blue-400 hover:underline">
-                            AI Manga Cover
-                        </a>: Create your own manga cover using AI. Simply provide a title and a description and let AI do the rest!
-                    </li>
-                    <li>
-                        <a href="https://noturavganimefan.github.io/sticky-notes/" target='_blank' className="text-blue-400 hover:underline">
-                            Sticky Notes
-                        </a>: A simple and intuitive sticky notes application built with React.
-                    </li>
-                    <li>
-                        <a href="https://noturavganimefan.github.io/sleepy-times/" target='_blank' className="text-blue-400 hover:underline">
-                            Sleepy Times
-                        </a>: Want to know when to fall asleep to wake up feeling amazing? Use this calculator to know when you should fall asleep based on sleep cycles.
-                    </li>
-                    <li>
-                        <a href="https://etch-a-sketch-nu-five.vercel.app/" target='_blank' className="text-blue-400 hover:underline">
-                            Etch-A-Sketch
-                        </a>: Draw what your heart desires on this near infinite canvas.
-                    </li>
-
-
-
-
+                    {projects.map((project) => (
+                        <li>
+                            <a href={project.link} target='_blank' className="text-blue-400 hover:underline">
+                                {project.title}
+                            </a>: {project.description}
+                        </li>
+                    ))}
                 </ul>
             </div>
             </div>
             <h2 className="text-base sm:text-lg pt-4 font-bold">Resume</h2>
             <Resume />
             {/* <h2 className="text-base sm:text-lg pt-4 font-bold">About Me</h2> */}
+            <div className="p-5">
+                <p className="text-xs sm:text-sm italic">
+                    Portfolio created in its entirety by Ricardo Manuel Morales Gonzalez
+                </p>
+            </div>
         </div>
     </div>
     )
